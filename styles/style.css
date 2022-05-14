@@ -86,7 +86,7 @@ ul li {
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
-	width: 200px !important;
+	width: 200px;
 	color: white;
 	margin-right: 0;
 	margin-top: 80px;
@@ -220,6 +220,13 @@ ul li {
 .table__cell {
 	width: 250px;
 	margin-top: 60px;
+}
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+	width: 200px;
+	color: white;
+	margin-right: 0;
+	margin-top: 80px;
 }
 .table__addition {
 	margin: 0;
