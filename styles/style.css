@@ -1,24 +1,17 @@
 p,
+ul,
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
 	margin: 0;
+	padding: 0;
 }
 
-.title-text {
-	line-height: 1.15;
-	font-size: 60px;
-	font-weight: bold;
-	text-align: center;
-}
-
-.subtitle-text {
-	line-height: 1.15;
-	font-size: 24px;
-	font-weight: bold;
-	text-align: center;
+ul li {
+	list-style: none;
 }
 
 .title-element {
@@ -31,7 +24,7 @@ h5 {
 	line-height: 1.2;
 	font-size: 18px;
 	font-weight: normal;
-	margin: 20px 0;
+	margin-top: 20px;
 }
 
 .link-decor {
@@ -48,7 +41,7 @@ h5 {
 	/* выше установили ограничение по максимальной ширине */
 	margin: 0 auto;
 	/* выше для экранов больше 1600px отцентрировали весь контент */
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'HelveticaNeueCyr', Arial, sans-serif;
 }
 
 .header {
@@ -61,7 +54,7 @@ h5 {
 	background-color: #f2f2f2;
 }
 
-.header_main-illustration {
+.header__main-illustration {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -87,13 +80,13 @@ h5 {
 	background-color: #2f80ed;
 }
 
-.left-padding {
+/* .left-padding {
 	padding-left: 64px;
-}
+} */
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
-	width: 200px;
+	width: 200px !important;
 	color: white;
 	margin-right: 0;
 	margin-top: 80px;
@@ -110,10 +103,10 @@ h5 {
 
 .logo {
 	width: 228px;
-	height: 32x;
+	height: 32px;
 }
 
-.header_title {
+.header__title {
 	display: flex;
 	align-items: center;
 
@@ -127,7 +120,7 @@ h5 {
 	line-height: 96px;
 }
 
-.header_subtitle {
+.header__subtitle {
 	position: absolute;
 	bottom: 30px;
 	left: 64px;
@@ -139,13 +132,9 @@ h5 {
 	font-size: 18px;
 }
 
-.header_link {
-	position: relative;
-}
-.header_link::after {
+.header__link::after {
 	content: '\2192';
-	position: absolute;
-	line-height: normal;
+	margin-left: 5px;
 }
 
 /*t description SECTION */
@@ -155,14 +144,18 @@ h5 {
 }
 
 .two-columns {
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+
+	width: 80%;
 }
 
-.two-columns_brief {
+.two-columns__brief {
 	width: 175px;
 }
-.two-columns_title {
+.two-columns__title {
+	color: #2f80ed;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 1.2;
@@ -193,21 +186,32 @@ h5 {
 	margin-top: 100px;
 }
 .section-title {
+	margin: 0 auto;
 	margin-bottom: 20px;
+	width: 60%;
 }
 
 .section-title__name {
+	line-height: 1.15;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.section-subtitle {
 	margin: 0 auto;
 	width: 60%;
 }
 
-.section-subtitle__text {
-	margin: 0 auto;
-	width: 60%;
+.section-subtitle__name {
+	line-height: 1.15;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
 }
 
 .table {
-	margin: auto;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -268,9 +272,7 @@ h5 {
 
 .feynman__link::after {
 	content: '\2192';
-	line-height: normal;
-	top: 50%;
-	font-size: xxx-large;
+	margin-left: 5px;
 }
 
 /* t kaufman SECTION */
@@ -283,26 +285,17 @@ h5 {
 	background-color: #000;
 }
 
-.table__title_theme_dark {
+.section-title_theme_dark {
 	color: #fff;
 }
-.table__subtitle_theme_dark {
+.section-subtitle_theme_dark {
 	color: #fff;
-	line-height: 34px;
-	font-size: 24px;
-	font-weight: normal;
-	text-align: center;
 }
 
 .table_theme_dark {
 	position: relative;
 	color: #fff;
 	z-index: 2;
-}
-.table__cell_theme_dark {
-	width: 200px;
-	color: #fff;
-	margin: 80px 0 0 0;
 }
 .table__heading_theme_dark {
 	color: #fff;
@@ -326,13 +319,10 @@ h5 {
 }
 
 /* t footer SECTION */
-.footer_theme_dark {
-	background-color: #000;
-}
-
 .footer {
-	padding-top: 60px;
+	padding: 60px 0 40px 0;
 	min-height: 350px;
+	background-color: #000;
 	color: #fff;
 }
 
@@ -340,53 +330,51 @@ h5 {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-
 	width: 90%;
-	height: 100%;
 }
 
-.footer__author {
-	padding: 18px 0;
-	line-height: 25px;
-	font-size: 18px;
-}
-
-.footer__columns_content_copyright {
+.footer__column_content_copyright {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	flex-basis: 711px;
+
+	min-height: 350px;
+}
+
+.logo_place_footer {
+	background-image: url(/images/logo_place_footer.svg);
+}
+
+.footer__author {
+	padding: 18px 0;
+
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.footer__columns_content_info {
 }
 
 .footer__column-heading {
 	margin-bottom: 20px;
 	line-height: 30px;
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
-.footer__column_info {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 16px;
-}
-
-.footer__column-links_decor {
+.footer__column-link {
 	text-decoration: none;
 	color: #fff;
 	line-height: 30px;
 	font-size: 18px;
-	font-weight: normal;
+	font-weight: 400;
 }
 
-.footer__column_social {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 16px;
-}
-
-.footer__column-icon {
-	margin-right: 10px;
+.footer__secial-icon {
 	width: 16px;
 	height: 16px;
+	margin-right: 10px;
+	vertical-align: middle;
 }
