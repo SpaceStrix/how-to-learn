@@ -84,14 +84,6 @@ ul li {
 	padding-left: 64px;
 } */
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-	width: 200px;
-	color: white;
-	margin-right: 0;
-	margin-top: 80px;
-}
-
 /* Let's go */
 
 .logo_place_header {
