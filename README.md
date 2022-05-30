@@ -7,7 +7,7 @@
 
 
 ## Используемые технологии.:smirk:
-    - HTML 5
+    - :heavy_check_mark:HTML 5
         - iframe
     - СSS3
         - FlexBox
@@ -17,6 +17,6 @@
     - BEM
     - Файловая организация BEM Nested
 
-## Бриф к проектной работе
+## :heavy_check_mark: Бриф к проектной работе
 1. [Первая часть проектной работы](https://code.s3.yandex.net/web-developer/project-1/sprint-1-brief.pdf)
 2. [Первая часть проектной работы](https://code.s3.yandex.net/web-developer/project-1/sprint-2-brief.pdf)
