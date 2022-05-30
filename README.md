@@ -18,5 +18,5 @@
     - Файловая организация BEM Nested
 
 ## :heavy_check_mark: Бриф к проектной работе
-1. [Первая часть проектной работы](https://code.s3.yandex.net/web-developer/project-1/sprint-1-brief.pdf)
-2. [Первая часть проектной работы](https://code.s3.yandex.net/web-developer/project-1/sprint-2-brief.pdf)
+1. [Бриф #_1](https://code.s3.yandex.net/web-developer/project-1/sprint-1-brief.pdf)
+2. [Бриф #_2](https://code.s3.yandex.net/web-developer/project-1/sprint-2-brief.pdf)
