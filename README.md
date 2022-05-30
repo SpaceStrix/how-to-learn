@@ -7,7 +7,7 @@
 
 
 ## Используемые технологии.:smirk:
-    - :heavy_check_mark:HTML 5
+    - HTML 5
         - iframe
     - СSS3
         - FlexBox
