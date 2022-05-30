@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./vendor/normalize.css" />
   <link rel="stylesheet" href="./styles/style.css" />
   <title>Научиться учиться</title>
 </head>
@@ -93,6 +93,7 @@
             </p>
           </li>
 
+
         </ul>
       </section>
       <!-- /.techniques -->
@@ -103,23 +104,20 @@
 
         <div class="video__iframes">
 
-          <div class="video__iframe">
 
-            <iframe align="left" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU?start=7"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <div class="video__iframe">
-            <iframe align="rigth" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY?start=1"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU?start=7"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY?start=1"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
         </div>
       </section>
       <!-- /.video -->
+
       <section class="oakley">
         <div class="two-columns">
           <h2 class="two-columns__title">История Барбары Оакли.</h2>
@@ -300,6 +298,25 @@
         <div class="kaufman__triangle rotations"></div>
       </section>
       <!-- /.kaufman -->
+
+      <section class="resources">
+        <h2 class="section-title">Полезные ресурсы</h2>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+
+        <div class="resources__logo-zone">
+          <a href="#" class="resources__link"><img src="./images/logo/resources-arzamas.svg" alt=""
+              class="resources__logo"></a>
+          <a href="#" class="resources__link"><img src="./images/logo/resources-n1.svg" alt=""
+              class="resources__logo"></a>
+          <a href="#" class="resources__link"><img src="./images/logo/resources-strelka.svg" alt=""
+              class="resources__logo"></a>
+          <a href="#" class="resources__link"><img src="./images/logo/resources-polka.svg" alt=""
+              class="resources__logo"></a>
+        </div>
+
+      </section>
+      <!-- /.resources -->
+
     </main>
     <!-- /.content -->
 
