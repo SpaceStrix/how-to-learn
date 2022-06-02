@@ -108,3 +108,9 @@
 
 /* rotations */
 @import url(../blocks/rotation/rotation.css);
+
+
+@import url(../blocks/feedback/feedback.css);
+@import url(../blocks/feedback/__container/feedback__container.css);
+
+
