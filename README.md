@@ -20,3 +20,7 @@
 ## :heavy_check_mark: Бриф к проектной работе
 1. [Бриф #_1](https://code.s3.yandex.net/web-developer/project-1/sprint-1-brief.pdf)
 2. [Бриф #_2](https://code.s3.yandex.net/web-developer/project-1/sprint-2-brief.pdf)
+
+
+## :heavy_check_mark: Посмотреть работу
+1. [Клац](https://spacestrix.github.io/how-to-learn/)
